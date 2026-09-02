@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+    <body>
+        <header>
+            <h1>PIZZARIA COMA BEM</h1>
+            <p>A melhor pizza de toda João pessoa! :D</p>
+            <h2>Localização: </h2>
+            <p>Rua XXX XXX, 123 - Bancários, XXXXX - XXX</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Cardápio:</h2>
+                <p>Só realizamos entregas por meio de delivery.</p>
+                <strong><p>Lembre-se de preencher o formulário para entrega ao fim do pedido!</p></strong>
+            </section>
+            <!--Explicação breve-->
+
+            <section>
+                <h2>Pizzas Salgadas:</h2>
+                <form>
+                    <input type="checkbox" value="Calabresa" id="PSa" name="PizzaSalgada">
+                    <label for ="PSa">Calabresa <strong>(R$20,00)</strong></label><br>
+
+                    <input type="checkbox" value="Portuguesa" id="PSb" name="PizzaSalgada">
+                    <label for ="PSb">Portuguesa <strong>(R$20,00)</strong></label><br>
+
+                    <input type="checkbox" value="Mussarela" id="PSc" name="PizzaSalgada">
+                    <label for ="PSc">Mussarela <strong>(R$20,00)</strong></label><br>
+
+                    <input type="checkbox" value="Quatro Queijos" id="PSd" name="PizzaSalgada">
+                    <label for ="PSd">Quatro Queijos <strong>(R$20,00)</strong></label><br>
+
+                    <input type="checkbox" value="Frango" id="PSe" name="PizzaSalgada">
+                    <label for ="PSe">Frango <strong>(R$20,00)</strong></label><br>
+                </form>
+             </section>
+            <!--Pizzas Salgadas-->
+
+            <section>
+                <h2>Pizzas Doces:</h2>
+                <form>
+                    <input type="checkbox" value="Romeu e Julieta" id="PDa" name="PizzaDoce">
+                    <label for="PDa">Romeu e Julieta <strong>(R$10,00)</strong></label><br>
+
+                    <input type="checkbox" value="Chocolate com Morango" id="PDb" name="PizzaDoce">
+                    <label for="PDb">Chocolate com Morango <strong>(R$10,00)</strong></label><br>
+
+                    <input type="checkbox" value="Banana com Canela" id="PDc" name="PizzaDoce">
+                    <label for="PDc">Banana com Canela <strong>(R$10,00)</strong></label><br>
+
+                    <input type="checkbox" value="Brigadeiro" id="PDd" name="PizzaDoce">
+                    <label for="PDd">Brigadeiro <strong>(R$10,00)</strong></label><br>
+
+                    <input type="checkbox" value="Doce de Leite" id="PDe" name="PizzaDoce">
+                    <label for="PDe">Doce de Leite <strong>(R$10,00)</strong></label><br>
+                </form>
+            </section>
+            <!--PizzasDoces-->
+
+            <section>
+                <h2>Bordas:</h2>
+                <form>
+                    <input type="radio" value="Cheddar" id="BDa" name="Bordas">
+                    <label for="BDa">Cheddar <strong>(R$5,00)</strong></label><br>
+
+                    <input type="radio" value="Catupiry" id="BDb" name="Bordas">
+                    <label for="BDb">Catupiry <strong>(R$5,00)</strong></label><br>
+
+                    <input type="radio" value="Cream Cheese" id="BDc" name="Bordas">
+                    <label for="BDc">Cream Cheese <strong>(R$5,00)</strong></label><br>
+
+                    <input type="radio" value="Bacon" id="BDd" name="Bordas">
+                    <label for="BDd">Bacon <strong>(R$5,00)</strong></label><br>
+
+                    <input type="radio" value="4 Queijos" id="BDe" name="Bordas">
+                    <label for="BDe">4 Queijos <strong>(R$5,00)</strong></label><br>
+                </form>
+            </section>
+            <!--Bordas-->
+         
+            <section>
+                <h2>Acompanhamentos:</h2>
+                <form>
+                    <input type="checkbox" value="Coca-cola 1L" id="Aa" name="Acompanhamentos">
+                    <label for="Aa">Coca-cola <strong>1L</strong></label><br>
+
+                    <input type="checkbox" value="Coca-cola 500ml" id="Ab" name="Acompanhamentos">
+                    <label for="Ab">Coca-cola <strong>500 ml</strong></label><br>
+
+                    <input type="checkbox" value="Fanta 1L" id="Ac" name="Acompanhamentos">
+                    <label for="Ac">Fanta <strong>1L</strong></label><br>
+
+                    <input type="checkbox" value="Fanta 500ml" id="Ad" name="Acompanhamentos">
+                    <label for="Ad">Fanta <strong>500 ml</strong></label><br>
+
+                    <input type="checkbox" value="Água 500ml" id="Ae" name="Acompanhamentos">
+                    <label for="Ae">Àgua <strong>500 ml</strong></label><br>
+                </form>
+                
+            </section>
+            <!--Acompanhamentos-->
+        </main>
+
+        <footer>
+            <h2>Formulário para a entrega:</h2>
+            <fieldset>
+                <legend>Preencha todas as informações</legend>
+                <h3>Nome:</h3>
+                <form>
+                   <input type="text" id="Nm" name="Nome" placeholder="Digite seu nome aqui..." required>
+                </form>
+                <h3>Telefone:</h3>
+                <form>
+                    <input type="tel" id="tlf" name="Telefone" placeholder="Digite seu telefone aqui..." required>
+                </form>
+
+                <h3>Forma de pagamento:</h3>
+                <form>
+                    <select name="pagamento" id="pagamento" required>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="PIX">PIX</option>
+                        <option value="Cartão de crédito">Cartão de crédito</option>
+                        <option value="Cartão de débito">Cartão de débito</option>
+                    </select>
+                </form>
+
+                <h3>Endereço:</h3>
+                <form>
+                    <input type="text" id="End" name="Endereço" placeholder="Digite seu endereço aqui..." required>
+                </form>
+
+                <h3>Ponto de referência:</h3>
+                <form>
+                    <input type="text" id="PTR" name="Ponto de referência" placeholder="Digite o ponto de referência aqui...">
+                </form>
+            </fieldset>
+            <br><button>Finalizar seu pedido!</button><br>
+
+            <h2>Avalie a qualidade da nossa pizza! :D</h2>
+            <p>Quantas estrelas você daria para nossa pizza?(de 1 a 5)</p>
+            <input type="text" id="ava" name="avaliação" min="1" max="5" placeholder="Digite aqui sua avaliação...">
+        </footer>
+
+
+    </body>
+</html>
