@@ -1,0 +1,157 @@
+style.css
+/* style.css - Tema: Pizzaria Coma Bem */
+:root {
+    --cor-primaria: #D9381E;      
+    --cor-fundo: #FDF6E2;          
+    --cor-card: #FFFFFF;           
+    --espacamento-padrao: 1.25rem; 
+    --raio-borda: 0.75rem;        
+}
+
+#cabecalho-principal {
+    text-align: center;
+    border-top: 0.375rem solid var(--cor-primaria);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: var(--espacamento-padrao);
+}
+
+body > header, 
+body > main, 
+body > footer {
+    max-width: 50rem;
+    margin: 0 auto 1.875rem auto;
+    background-color: var(--cor-card);
+    padding: var(--espacamento-padrao);
+    border-radius: var(--raio-borda);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+
+.card-secao {
+    margin-bottom: 1.5625rem;
+}
+
+.destaque-texto {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.botao-principal {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.25rem;
+    transition: background-color 0.2s;
+}
+
+.botao-principal:hover {
+    background-color: #B52B14;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--cor-primaria);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+h1::before {
+    content: "🍕";
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+    margin-bottom: 0.75rem;
+    border-bottom: 0.125rem solid var(--cor-fundo);
+    padding-bottom: 0.3125rem;
+}
+
+fieldset {
+    border: 0.125rem solid #F2E3C6;
+    border-radius: 0.5rem;
+    padding: 1.25rem; /* Box model: preenchimento interno */
+    margin-top: 0.9375rem; /* Box model: espaçamento externo */
+    background-color: #FFFCF5;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    padding: 0 0.625rem;
+}
+
+/* REQUISITO 8: Estilização de listas e tabelas */
+ul, ol {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 0.0625rem solid #E6D5B8;
+    text-align: left;
+}
+
+/* Inputs e formulários */
+input[type="text"],
+input[type="tel"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 0.125rem solid #E6D5B8;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--cor-primaria);
+    transform: scale(1.1);
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+a:link {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9A2411;
+}
+
+a:hover {
+    color: #FF5733;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #6D160A;
+}
