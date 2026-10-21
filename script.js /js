@@ -1,4 +1,4 @@
-cript.js
+script.js
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form-pedido');
     const spanTotal = document.getElementById('valor-total');
